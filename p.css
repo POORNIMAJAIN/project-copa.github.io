@@ -1,0 +1,109 @@
+*{
+BOX-SIZING:BORDER-BOX;
+}
+BODY{
+FONT-FAMILY:CAMBRIA;
+PADDING:10PX;
+BACKGROUND:CREAM;
+}
+
+/*HEADER/BLOG TITLE*/
+.HEADER{
+PADDING:25PX;
+TEXT-ALIGN:CENTER;
+BACKGROUND:YELLOW;
+}
+.HEADER H1{
+FONT-SIZE:90PX;
+}
+/*STYLE THE TOP NAVIGATION BAR*/
+.TOPNAV{
+OVERFLOW:HIDDEN;
+BACKGROUND-COLOR:GREY;
+}
+/*STYLE THE TOPNAV LINKS*/
+.TOPNAV A{
+FLOAT:LEFT;
+DISPLAY:BLOCK;
+COLOR:AQUA;
+TEXT-ALIGN:CENTER;
+PADDING:14PX 16PX;
+TEXT-DECORATION:Cambria Math;
+}
+/*change color on hover*/
+.topnav a:hover{
+background-color:#ddd;
+color:black;
+}
+/*create two unequal columns that floats next to each other*/
+/*left column*/
+.leftcolumn{
+float:left;
+width:75%;
+}
+/* RIGHT COLUMN*/
+.RIGHTCOLUMN{
+FLOAT:LEFT;
+WIDTH:25%;
+BACKGROUND-COLOR:#F1F1F1;
+PADDING-LEFT:20PX;
+}
+DIV:GALLERY{
+BORDER:1PX SOLID #CCC;
+}
+DIV:GALLERY:HOVER{
+BORDER:1PX SOLID #777;
+}
+DIV.GALLERY IMG{
+WIDTH:20%;
+}
+/*IMAGE*/
+.IMG1{
+BACKGROUND-COLOR:#AAA;
+WIDTH:20%;
+PADDING:10PX;
+}
+
+/*ADD  A CARD EFFECT FOR ARTICLES*/
+.CARD{
+BACKGROUND-COLOR:PINK;
+PADDING:20PX;
+MARGIN-TOP:20PX;
+}
+
+/*CLEAR FLOATS AFTER THE COLUMNS*/
+.ROW:AFTER{
+CONTENT:"";
+DISPLAY:TABLE;
+CLEAR:BOTH;
+}
+
+/*footer*/
+.footer{
+padding:20px;
+display:block;
+text-align:center;
+background:#ddd;
+margin-top:20px;
+}
+
+/*responsive layout-when the screen is less than 800px wide,
+make the two columns stack on top of each other intead of next
+to each other*/
+@media screen and (max-width:800px){
+.leftcolumn,.rightcolumn{
+width:100%;
+padding:0;
+}
+}
+
+/*responsive layout-when the screen is less then 400px wide,
+make the navigation links stacks on top of each other intead
+of  next to each other*/
+@media screen and (max-width:400px){
+.topnav a {
+float:none;
+width:100%;
+}
+}
+
